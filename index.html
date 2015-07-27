@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+
+    <meta charset="utf-8" pt-BR>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>F2d Treinamento uncional</title>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
@@ -17,12 +21,7 @@
      <div class="navbar-default ">
           <div class="container-fluid">
       
-      <!--log do cliente inicial-->
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">
-                <img alt="logo F2D"src="img/logo-f2d.png" height="220" width="320">
-              </a>
-      <!--log do cliente-->
+                  <!--escondido meno de 940px-->
 
            <!-- class="btn USADA COM AUTERNADOR PARA O CONTEUDO COLAPSAVEL icone responsivo -->
           <button class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -31,16 +30,24 @@
            <span class="icon-bar"></span>
          </button>
           
-          <!--escondido meno de 940px-->
+          <!--log do cliente inicial-->
+            
+              <a class="navbar-brand" href="index.html">
+                <img alt="logo F2D"src="img/logo-f2d.png" height="220" width="320">
+              </a>
+          <!--log do cliente-->
+
            <div class="nav-collapse collapse">
-          
-            <SPAN>
+
+            <!--buscador do menu-->
+ 
+             <SPAN>
              <form class="navbar-search ">
               <input type="text" class="search-query" placeholder="Busca no site">
               </form>
              </SPAN>
-        
-            <ul class="nav">
+           <!-- fim buscador do menu-->
+            <ul class="nav ">
 
               <li><a href="#">HOME</a></li>
               <li><a href="#">SOBRE</a></li>
@@ -48,10 +55,11 @@
                 <a href="#"class="dropdown-toggle" data-toggle="dropdown">TREINAMENTO
                 <b class="caret"></b>
                 </a>
-
                     <ul class="dropdown-menu">
-                      <li><a>Funcional</a></li>
-                      <li><a>Personal</a></li>
+                        <li><a>#</a></li>
+                        <li><a>#</a></li>
+                        <li><a>#</a></li>
+                        <li><a>#</a></li>
                     </ul>
                  </li>
               <li><a href="#">MULTIMIDIA</a></li>
@@ -63,9 +71,100 @@
 
      </div>
    </nav> 
+<!--começa o carrosel-->
+
+<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div>
+                 <img src="img/img_2.jpg" height="539" width="960" alt="">
+               </div>
+                <div class="carousel-caption">
+                    <!--legenda entra aqui-->
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                <img src="img/img_3.jpg" height="539" width="960" alt="">
+                </div>
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                <img src="img/img_4.jpg" height="539" width="960">
+                </div>
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class=""></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class=""></span>
+        </a>
+    </header>
+
+
+<!--Finaliza o carrosel-->
+
+
+
+
+
+
 
    
     
 
   </body>
+
+  <footer> <!-- Aqui e a area do footer -->
+  <div class="container">
+    <div class="row">
+      <div id="linksImportantes" class="col-xs-12 col-sm-3 col-md-3">
+        <h4>Links Importantes</h4>
+        <ul>
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><a href="#">Link3</a></li>
+          <li><a href="#">Link4</a></li>
+        </ul>
+      </div> <!-- Aqui e a area dos links importantes -->
+      <div id="redesSociais" class="col-xs-12 col-sm-3 col-md-3">
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Googleplus</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div> <!-- Aqui e a area das redes sociais -->
+      <div id="logoFooter" class="col-xs-12 col-sm-3 col-md-3 col-sm-offset-3 col-md-offset-3 ">
+        <h2>Meu site</h2>
+      </div> <!-- Aqui e a area da logo do rodape -->
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>&copy; Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</div>
 </html>

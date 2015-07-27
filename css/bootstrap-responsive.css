@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap Responsive v2.3.2
  *
@@ -944,9 +945,17 @@
     padding: 10px;
     margin: -10px;
   }
+
+  .carousel {
+  position: relative;
+  margin-top: -18px;
+  font-size: 10px;
+}
+
   .carousel-caption {
-    position: static;
-  }
+    position: absolute;
+    
+  
 }
 
 @media (max-width: 979px) {
@@ -1099,6 +1108,8 @@
     padding-right: 10px;
     padding-left: 10px;
   }
+
+  
 }
 
 @media (min-width: 980px) {
@@ -1107,3 +1118,5 @@
     overflow: visible !important;
   }
 }
+
+
