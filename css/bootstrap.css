@@ -472,6 +472,7 @@ a:focus {
 .row-fluid .span4 {
   width: 31.914893617021278%;
   *width: 31.861702127659576%;
+  
 }
 
 .row-fluid .span3 {
@@ -2627,12 +2628,14 @@ table th[class*="span"],
 }
 
 .icon-chevron-left {
+  margin-top:150%;
   background-position: -432px -72px;
 }
 
 .icon-chevron-right {
+  margin-top:150%;
   background-position: -456px -72px;
-}
+ }
 
 .icon-plus-sign {
   background-position: 0 -96px;
@@ -3956,7 +3959,8 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 10px;
   margin-left: 0;
   list-style: none;
-  font-weight: bold
+  font-weight: bold;
+  font-size: 17px;
 
 }
 
@@ -4376,6 +4380,7 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   overflow: visible;
 }
+
 
 .navbar-default {
   background-color: #0b9ff0;
@@ -6050,9 +6055,9 @@ a.badge:focus {
 
 .carousel {
   position: relative;
-  margin-top: 175px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-top: 176px;
+  margin-left: 19%;
+  margin-right: 19%;
 }
 .carousel-inner {
   position: relative;
@@ -6278,14 +6283,6 @@ a.badge:focus {
   }
 
 
-
-
-
-
-
-
-
-
 .hero-unit {
   padding: 60px;
   margin-bottom: 30px;
@@ -6336,7 +6333,5 @@ a.badge:focus {
 }
 
 
-#carousel-example-generic{
 
 
-}
