@@ -950,6 +950,7 @@
   position: relative;
   margin-top: -18px;
   font-size: 10px;
+  
 }
 
 .carousel-indicators {
@@ -1107,6 +1108,9 @@
   }
   .navbar .btn-navbar {
     display: block;
+    color:#000;
+    font-weight: bold;
+
   }
   .navbar-static .navbar-inner {
     padding-right: 10px;
@@ -1122,5 +1126,4 @@
     overflow: visible !important;
   }
 }
-
 
