@@ -251,6 +251,12 @@ a:focus {
           border-radius: 6px;
 }
 
+.polaroid{
+  border:10px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5); 
+          box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
+}
 .img-rounded {
   padding: 4px;
   background-color: #fff;
@@ -6101,8 +6107,8 @@ a.badge:focus {
   position: relative;
   margin-top: 180px;
   padding-bottom:1px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 13.7%;
+  margin-right: 13.7%;
 5}
 .carousel-inner {
   position: relative;
@@ -6186,7 +6192,7 @@ a.badge:focus {
 .carousel-control {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom:6px;
   left: 0;
   width: 15%;
   font-size: 20px;
@@ -6381,4 +6387,8 @@ a.badge:focus {
 .centralizado {
     margin: 0 auto;
     float: none;
+}
+
+.linha{
+  border-width: 0 0 1px 0;
 }
