@@ -948,12 +948,12 @@
 
   .carousel {
   position: relative;
-  margin-top: -10px;
-  padding-bottom:1px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: -18px;
+  font-size: 10px;
+  
 }
-  .carousel-indicators {
+
+.carousel-indicators {
  display:none;
 }
 
