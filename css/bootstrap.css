@@ -257,6 +257,7 @@ a:focus {
   border-radius: 6px;
 }
 
+<<<<<<< HEAD
 .polaroid{
   border:10px solid #fff;
   width:100%;
@@ -264,6 +265,8 @@ a:focus {
   -moz-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5); 
   box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
 }
+=======
+>>>>>>> 558da0c6bc427747e0cb18b768e75991d057bd0d
 .img-rounded {
   padding: 4px;
   background-color: #fff;
@@ -6113,10 +6116,16 @@ a.badge:focus {
   position: relative;
   margin-top: 180px;
   padding-bottom:1px;
+<<<<<<< HEAD
   margin-left: 10%;
   margin-right: 10%;
 
 }
+=======
+  margin-left: 15%;
+  margin-right: 15%;
+5}
+>>>>>>> 558da0c6bc427747e0cb18b768e75991d057bd0d
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -6200,7 +6209,11 @@ a.badge:focus {
 .carousel-control {
   position: absolute;
   top: 0;
+<<<<<<< HEAD
   bottom:0px;
+=======
+  bottom: 0;
+>>>>>>> 558da0c6bc427747e0cb18b768e75991d057bd0d
   left: 0;
   right:0;
   width: 10%;
@@ -6396,8 +6409,12 @@ a.badge:focus {
   .centralizado {
     margin: 0 auto;
     float: none;
+<<<<<<< HEAD
   }
 
   .linha{
     border-width: 0 0 1px 0;
   }
+=======
+}
+>>>>>>> 558da0c6bc427747e0cb18b768e75991d057bd0d
