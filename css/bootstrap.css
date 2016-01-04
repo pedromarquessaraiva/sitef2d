@@ -4448,12 +4448,15 @@ border 2px;
 
   color: #fff;
   background-color: #046606;
-   
+  border-right: solid #048707 2px;
+  border-left: solid #048707 2px;
+
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
+  background-color: #046606;
  
     
              
