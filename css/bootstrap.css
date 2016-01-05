@@ -4446,10 +4446,10 @@ border 2px;
 .navbar-default .navbar-nav > li > a:focus
 .navbar-default .navbar-nav > li > a:active{
 
-  color: #fff;
-  background-color: #046606;
-  border-right: solid #048707 2px;
-  border-left: solid #048707 2px;
+  color: #000;
+  background-color: rgba(0, 255, 72, 0.5);
+  border: solid #048707 1px;
+
 
 }
 .navbar-default .navbar-nav > .active > a,
@@ -4457,7 +4457,7 @@ border 2px;
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
   background-color: #046606;
- 
+  border: solid #048707 1px;
     
              
 }

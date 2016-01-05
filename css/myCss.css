@@ -11,6 +11,7 @@ body {
 
 p {
     font-size: 15px;
+    margin: 2%;
 }
 
 p.small {
@@ -137,6 +138,13 @@ header .intro-text .skills {
        
     }
 }
+
+.aumentoPadding {
+    padding: 3%;
+}
+
+
+
 
 
 
