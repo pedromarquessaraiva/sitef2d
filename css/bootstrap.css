@@ -1613,7 +1613,7 @@ pre code {
 .row {
   margin-left: -18px;
   margin-right: -18px;
-    margin-top:-17px;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1621,7 +1621,7 @@ pre code {
 .row {
   margin-left: -18px;
   margin-right: -18px;
-    margin-top:45px;
+
     }
 }
 
@@ -3897,21 +3897,87 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  color: #ffffff;
+
 }
-.nav > li {
+
+    .nav > li {
+        position: relative;
+        display: block;
+      font-size: 16px;
+        /*border-bottom: 1px groove #046606;*/
+    }
+
+@media(min-width:700px){
+    .nav > li  {
   position: relative;
   display: block;
+    border-right: 1px groove #dddddd;
+    color:#fff;
+    font-size:15px;
+    text-align:center;
+    transition: all .5s;
+
 }
+}
+
+@media(min-width:1200px){
+  .nav > li  {
+    position: relative;
+    display: block;
+    border-right: 1px groove #dddddd;
+    color:#fff;
+    font-size:18px;
+    text-align:center;
+    transition: all .5s;
+
+  }
+}
+
+
+
+
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  color: #ffffff;
+  padding:18px;
+}
+
+
+
+
+@media(min-width:720px) {
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        text-decoration: none;
+        transition: all .5s;
+
+    }
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #ecf0f1;
+    text-decoration: none;
+    background-color: #cccccc;
+    color: #000;
+    transition: all .5s;
 }
+
+.nav > li#saude > a:hover{
+  text-decoration: none;
+  background-color: #18bc9c;
+  color: #000;
+  transition: all .5s;
+}
+
+.nav > li#evento > a:hover{
+  text-decoration: none;
+  background-color: #f39c12;
+  color: #000;
+  transition: all .5s;
+}
+
+
 .nav > li.disabled > a {
   color: #b4bcc2;
 }
@@ -4088,9 +4154,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 60px;
-  margin-bottom: 21px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
+
+
+
 @media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
@@ -4406,11 +4475,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-left {
     float: left !important;
   }
+
+  #menu {
+    background-color: #222;
+   }
+
+
   .navbar-right {
-    float: right !important;
-    margin-right: -15px;
-    margin-top: 123px;
-      
+    margin-left: 27%;
+
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -4418,7 +4491,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #048707;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);
+  /*box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);*/
 }
 
 .navbar-default {
@@ -4438,29 +4511,54 @@ border 2px;
 .navbar-default .navbar-text {
   color: #777777;
 }
-.navbar-default .navbar-nav > li > a {
-  color: #fff;
+
+@media (max-width: 280px){
+
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+        font-size: 15px;
+
+    }
 
 }
-.navbar-default .navbar-nav > li > a:hover,
+
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+    font-size: 14px;
+
+}
+
+@media(min-width:720px) {
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+}
+
+
 .navbar-default .navbar-nav > li > a:focus
 .navbar-default .navbar-nav > li > a:active{
 
   color: #000;
   background-color: rgba(0, 255, 72, 0.5);
   border: solid #048707 1px;
+}
 
+.navbar-default .navbar-nav > li > a:hover{
 
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-  background-color: #046606;
-  border: solid #048707 1px;
-    
-             
+  /*background-color: #000;*/
+
+    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .4));*/
+    /*transition: all .5s;*/
 }
+
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {

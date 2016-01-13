@@ -81,22 +81,27 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+.centralizado {
+    margin: 0 auto !important;
+    float: none;
+    font-size: 10px;
+}
+
+@media (min-width: 1200px){
+    .centralizado {
+        margin: 0 auto !important;
+        float: none;
+    }
+
+}
 
 header {
     border-color:#000;
     text-align: center;
-    
-       
-    
+
 }
 
-header .container {
-    padding-top: 130px;
-    padding-bottom: 10px;
-  background-color: #f6f6f6;
-    
-     
-}
+
 
 header img {
     display: block;
@@ -116,10 +121,31 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header .container {
+    background-color: #f6f6f6;
+
+
+}
+
+.imgHome{
+    width: 260px;
+    padding: 2%;
+}
+
+
+@media (max-width: 480px) {
+
+    .imgHome{
+        width: 180px;
+        padding: 2%;
+    }
+
+}
+
 @media(min-width:768px) {
     header .container {
-        padding-top: 195px;
-        padding-bottom: 10px;
+        padding-top: 1%px;
+
     }
 
     header .intro-text .name {
@@ -131,22 +157,18 @@ header .intro-text .skills {
     }
 }
 
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 0px;
-        font-size: 18px;
-       
-    }
-}
-
 .aumentoPadding {
     padding: 3%;
 }
 
+@media (max-width: 480px)  {
 
-
-
-
+    .aumentoPadding {
+        padding: 1%;
+        width: 80%;
+       margin: 0 auto;
+    }
+}
 
 
 /*
@@ -532,7 +554,6 @@ img #logoHome{
     ul li a:hover{
 
         color: #025388;
-        background-color: #ccc;
         text-decoration: none;
         
 
@@ -578,3 +599,6 @@ div hr.linhaMenu{
      -moz-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5); 
           box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
       }
+
+
+.
