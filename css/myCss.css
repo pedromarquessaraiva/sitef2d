@@ -161,11 +161,11 @@ header .container {
     padding: 3%;
 }
 
-@media (max-width: 480px)  {
+@media (max-width: 990px)  {
 
     .aumentoPadding {
         padding: 1%;
-        width: 80%;
+        width: 75%;
        margin: 0 auto;
     }
 }
@@ -543,12 +543,21 @@ img #logoHome{
 
     }
 
-    ul li a{
+
+
+
+    ul li a {
 
         display: block;
+        padding:11.5px;
 
+    }
+@media(min-width:1380px) {
+    ul li a {
+
+        display: block;
         padding: 8px 25px;
-   
+    }
     }
 
     ul li a:hover{

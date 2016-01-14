@@ -1128,6 +1128,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.img-responsive2,
+ {
+  display: block;
+  max-width: 30%;
+  height: auto;
+}
  
 
 .img-rounded {
@@ -3905,23 +3912,50 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         position: relative;
         display: block;
       font-size: 16px;
-        /*border-bottom: 1px groove #046606;*/
+      /*? border-bottom: 1px groove #046606;*/
     }
 
-@media(min-width:700px){
+@media(max-width:766px){
+    .nav > li {
+        position: relative;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      font-weight: bolder;
+      width: 85%;
+      margin: 0px auto;
+
+
+    }
+}
+@media(max-width:766px){
+  .nav > li > a{
+    margin:10px;
+    margin-bottom:3px;
+    margin-top:3px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,#222,#555);
+    border: 1px groove #555;
+  }
+}
+
+
+
+@media(min-width:766px){
     .nav > li  {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
     border-right: 1px groove #dddddd;
     color:#fff;
-    font-size:15px;
+    font-size:17px;
     text-align:center;
     transition: all .5s;
 
 }
 }
 
-@media(min-width:1200px){
+@media(min-width:1400px){
   .nav > li  {
     position: relative;
     display: block;
@@ -3936,24 +3970,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 
 
-
 .nav > li > a {
   position: relative;
   display: block;
   color: #ffffff;
-  padding:18px;
+
 }
 
 
-
-
-@media(min-width:720px) {
+@media(min-width:766px) {
     .nav > li > a:hover,
     .nav > li > a:focus {
         text-decoration: none;
         transition: all .5s;
 
     }
+
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4162,7 +4194,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -4172,9 +4204,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+    padding-left: 5px;
   border-top: 1px solid transparent;
+    background-color: #222;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -4227,8 +4260,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
+    /*margin-right: 0;*/
+    /*margin-left: 0;*/
   }
 }
 .navbar-static-top {
@@ -4285,23 +4318,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
-  padding: 9px 10px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-  background-color: transparent;
+  margin-right: 30px;
+  padding:5px;
+  padding-bottom: 7px;
+  margin-top: -60px;
+  margin-bottom: 5px;
+  background-color: #057F07;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 .navbar-toggle:focus {
   outline: 0;
 }
 .navbar-toggle .icon-bar {
   display: block;
-  width: 22px;
+  width: 38px;
   height: 2px;
   border-radius: 1px;
+  background-color: #fff;
+
+
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -4350,11 +4388,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li {
     float: left;
   }
+
   .navbar-nav > li > a {
     padding-top: 15.5px;
     padding-bottom: 15.5px;
   }
 }
+
+
 .navbar-form {
   margin-left: -15px;
   margin-right: -15px;
@@ -4476,9 +4517,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left !important;
   }
 
-  #menu {
-    background-color: #222;
-   }
+
 
 
   .navbar-right {
@@ -4670,7 +4709,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #128f76;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #dddddd;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
