@@ -1160,9 +1160,9 @@ hr {
   margin-top: 21px;
   margin-bottom: 21px;
   border: 0;
-  border-top: 2px solid #2c3e50;
-  max-width: 250px;
-  border-width: 5px 0px 0px;
+  border-top: 1px solid #777;
+  max-width: 90%;
+  /*border-width: 5px 0px 0px;*/
   border-style: solid none none;
    
 }
@@ -6758,6 +6758,20 @@ button.close {
 }
 .navbar {
   border-width: 0;
+}
+
+.navbar-footer {
+  padding-top:7%;
+}
+
+.navbar-footer > li > a {
+  font-size: 14px;
+  color:#999;
+}
+
+.navbar-footer > li > a:hover{
+  color: #ffffff;
+  background-color: #1c2638;
 }
 .navbar-default .badge {
   background-color: #fff;

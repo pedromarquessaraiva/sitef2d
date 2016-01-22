@@ -394,7 +394,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #606060;
+    color: #999;
 }
 
 footer h3 {
@@ -608,6 +608,7 @@ div hr.linhaMenu{
      -moz-box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5); 
           box-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.5);
       }
+p{
+    text-align: justify;
 
-
-.
+}
