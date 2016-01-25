@@ -16,7 +16,10 @@
 
     <!-- Custom CSS -->
     <link href="css/myCss.css" rel="stylesheet">
-    <link href="bootstrap-social.css" rel="stylesheet" >
+    <link href="css/bootstrap-social.css" rel="stylesheet" >
+    <link href="css/hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,408 +31,293 @@
 </head>
 
 <body id="page-top" class="index" >
+<!--codigo para utilizar plugin do face-->
 
-     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" >
-        
-    
-        <div class="container">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="navbar navbar-default">
+
+               <div class="container">
+
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                   <div class="navbar-header page-scroll">
+                      <a href="#page-top"><img  src="img/logoHome.png" class="img-responsive imgHome"></a>
+
+                   </div>
+
+                   <div class="redesocial visible-lg visible-md">
+
+                       <a id="twitter" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-twitter "></span>
+                       </a>
+                       <a id="face" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-facebook"></span>
+                       </a>
+                       <a id="insta" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-instagram"></span>
+                       </a>
+                       <a id="lkd" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-linkedin"></span>
+                       </a>
+                       <a id="youtube" class="hvr-bob btn btn-social-icon btn-lg">
+                           <span class="fa fa-youtube"></span>
+                       </a>
+
+                   </div>
+
+
+               </div>
+    </div>
+
+    <div style="background-color: #222">
+
+        <nav class="container col-md-12 ">
             <!-- Brand and toggle get grouped for better mobile display -->
-            
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#page-top"><img  src="img/teste1.png" class="img-responsive" width="260px"></a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              
-                <ul class="nav navbar-nav navbar-right">
-                   
-                   
-                    <li class="nav ">
+                     <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                            <span style="color: #fff;font-weight:bolder;font-size: 13px; ">MENU</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                     </div>
+
+            <!-- menu responsivo icon-->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav centralizado col-md-6 col-md-offset-1 ">
+
+                    <li class="nav">
                         <a href="index.html">Home</a>
                     </li>
-                     
-                    <li class="nav active ">
+
+                    <li class="nav">
                         <a href="sobre.html">Sobre</a>
                     </li>
-                    
-                    <li class="nav">
-                        <a class="nav                         <ul class="dropdown hvr-shadow-radial">
-">Saúde 
-                            <b class="glyphicon glyphicon-triangle-bottom"></b>
-                        </a>
-                       
-                        <ul class="dropdown ">
-                                    <li >
-                                        <a href="#">Dicas</a></li>
-                                    <li>
-                                        <a href="#">Alimentação</a></li>                          
-                                </ul> 
-                    </li>
-                
-                    <li class="nav">
-                        <a class="nav">Treinamento  
-                            <b class="glyphicon glyphicon-triangle-bottom"></b>
-                        </a>
-                       
-                        <ul class="dropdown ">
-                                    <li >
-                                        <a href="#">Funcional</a></li>
-                                    <li>
-                                        <a href="#">Musculação</a></li>                          
-                                </ul> 
+
+                    <li class="nav" id="saude">
+                        <a href="pages/saude/saude1.html">Saúde</a>
                     </li>
 
+                    <li class="nav">
+                        <a href="pages/treino/treino1.html">Treino </a>
+                    </li>
 
                     <li class="nav">
-                        <a href="">Fotos</a>                        
+                        <a>Fotos</a>
                     </li>
-                    
+
                     <li class="nav">
-                        <a href="videos.html">Vídeos</a>
+                        <a>Vídeos</a>
                     </li>
-                    
+
+                    <li class="nav "id="evento">
+                        <a href="pages/evento/eventos1.html">Eventos</a>
+                    </li>
+
                     <li class="nav">
-                        <a href="videos.html">Eventos</a>
+                        <a>Contatos</a>
                     </li>
+
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
-        </div>
+       </nav>
         <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-   
-    <!-- Header -->
+    </div>
 
     <header>
-           <div class="container">
-                <div class="row "id="home">
-                    <div class="col-md-3">
-                        <h2>Sobre</h2>
-                      
-                       <p>
-                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                           </p>
-  
-                                            
+        <div style="margin-top: 4.5%" class="container">
+                <div class="row col-md-12">
+
+                    <div class="col-md-4">
+                        <img src="img/logoF2d.png"class="img-responsive img-thumbnail"  alt="">
                     </div>
-                    <div class="col-md-9">
-                        
-                        <p>Confira 10 dicas para perder peso de forma saudável. Elas são dicas simples, porém, extremamente eficazes durante o processo para perder peso. Quando falamos em perder peso, é curioso porque as mulheres e homens experimentam diversas dietas na busca de uma fórmula mirabolante para perder peso. Mas, esquecem do básico.
-Pequenas coisas que podem ser feitas diariamente fazem muita diferença, além disso, ter uma boa noite de sono é importante ter bons hábitos alimentares para manter o peso em seu nível ideal. Por isso, existem algumas dicas!
 
-                        </p> 
-            
-                        
-                    </div>
-                    
-          
+                    <div class="col-md-8">
+                        <p>
+                        A <span style="text-transform: uppercase; font-weight:bolder;font-style: italic">
+                            F2D Circuito Treinamento Funcional
+                        </span>
 
-                </div>
-            </div>
-
-
-    </header>
-    
-   
-    <div class="container">
-          
-        <div class="col-md-6">
-          <h1>titulo</h1>
-            <iframe width="560" height="308" src="https://www.youtube.com/embed/fnjtv4zzH78" frameborder="0" allowfullscreen></iframe>
-
-        </div>
-        
-        <div class="col-md-6">
-            
-             
-        </div>
-    
-    </div>
-    
-    
-    
-    
-    
-     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    
-      <!--- edição do portifolio (fotos)
+                        É uma empresa especializada em oferecer um programa que proporciona
+                        a adaptação das pessoas à prática regular de atividade física, promovendo assim, uma maior integração social,
+                        melhoria do condicionamento físico, diminuição do nível de estresse, prevenção e reabilitação de lesões e
+                        contribuição para uma melhor qualidade de vida de forma educativa, criativa, dinâmica e consciente.
+                        Nossos profissionais são graduados em Educação Física e pós graduados em fisiologia do exercício.
+                        </p>
 
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <h4 > <span class="glyphicon glyphicon-screenshot"></span> - Missão </h4>
+                                <p>
+                                    Mostrar, pelo exemplo, que independentemente da idade, com garra, determinação, força de vontade
+                                    e boa orientação profissional é possível alcançar seus objetivos. Orientar cada aluno a ter disciplina e
+                                    uma rotina de atividades físicas com eficiência, qualidade e segurança, ajudando-os a ter uma vida mais saudável.
+                                    Prestar serviço personalizado de qualidade para a prática de condicionamento físico que atenda as necessidades e
+                                    objetivos de cada aluno sempre respeitando a individualidade de cada um.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4> <span class="glyphicon glyphicon-eye-open"></span> - Visão</h4>
+                                <p>
+                                    É uma empresa especializada em oferecer um programa que proporciona
+                                    a adaptação das pessoas à prática regular de atividade física, promovendo assim, uma maior integração social,
+                                    melhoria do condicionamento físico, diminuição do nível de estresse, prevenção e reabilitação de lesões e
+                                    contribuição para uma melhor qualidade de vida de forma educativa, criativa, dinâmica e consciente.
+                                    Nossos profissionais são graduados em Educação Física e pós graduados em fisiologia do exercício.
+                                </p>
+                            </div>
+
+                            <!--plugin face-->
+                            <div style="padding-bottom: 2%" class="col-md-12 ">
+                                <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count">
+                                </div>
+                                <div class="fb-follow" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count" data-show-faces="false">
+                                </div>
+                            </div>
+
+                            <!--fim plugin face-->
                         </div>
                     </div>
                 </div>
+
+        </div>
+
+        </header>
+
+    <!-- Footer -->
+
+<footer class="text-center">
+    <div class="footer-below">
+        <div class="container">
+            <div class="col-md-12">
+                <div  style="border-right: 1px  solid; padding-bottom: 2.7%" class="col-md-6 visible-lg">
+                    <ul class="navbar-footer">
+
+                        <li class="nav">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav">
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+
+                        <li class="nav">
+                            <a>Saúde </a>
+                        </li>
+
+                        <li class="nav">
+                            <a href="pages/treino/treino1.html" >Treino </a>
+                        </li>
+
+                        <li class="nav">
+                            <a>Fotos</a>
+                        </li>
+
+                        <li class="nav">
+                            <a>Vídeos</a>
+                        </li>
+
+                        <li class="nav">
+                            <a>Eventos</a>
+                        </li>
+
+                        <li class="nav">
+                            <a>Contatos</a>
+                        </li>
+
+                    </ul>
+                </div >
+                <div class="col-md-6">
+
+
+                    <p>Redes sociais:</p>
+
+                    <a class="btn btn-social-icon btn-lg btn-twitter">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-instagram">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-linkedin">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-lg btn-pinterest">
+                        <span class="fa fa-youtube"></span>
+                    </a>
+
+                </div>
+
             </div>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+        <hr>
+        <!--final container 1-->
+        <div style="background-color: #233140" class="container col-md-12 text-center ">
+            <div>
+                todos os direitos reservados a f2d
+                <br>
+                    <span>
+                        desenvolvido por softweb 2016
+                        <a href="">
+                            <span class="fa fa-github"></span>
+                        </a>
+                    </span>
+
+
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
+
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--final footer-below-->
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-  
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</footer>
 
-edição do portifolio (fotos)
--->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/freelancer.js"></script>
 
 </body>
 
 </html>
 
-    
-    
+
+
+
+
+
     
     
     
