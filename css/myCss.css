@@ -670,6 +670,10 @@ section#fotosPage{
     }
 }
 
+section#fotosPage h1{
+
+    font-size: 18px;
+}
 
 /*visão responsiva*/
 
@@ -728,3 +732,9 @@ a#activeMenu{
     color: #222222;
     background-color:#cccccc;
 }
+/*para utilizar o scrollfixed */
+
+#fixo{
+
+}
+/*fim*/
