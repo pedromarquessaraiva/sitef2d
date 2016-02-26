@@ -34,7 +34,6 @@
 
 <body class="index" >
 <!--codigo para utilizar plugin do face-->
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -43,6 +42,23 @@
     js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<!--para youtube-->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script>
+    function onYtEvent(payload) {
+        if (payload.eventType == 'subscribe') {
+            // Add code to handle subscribe event.
+        } else if (payload.eventType == 'unsubscribe') {
+            // Add code to handle unsubscribe event.
+        }
+        if (window.console) { // for debugging only
+            window.console.log('YT event: ', payload);
+        }
+    }
+</script>
+
 
     <div class="navbar navbar-default">
 
@@ -138,38 +154,74 @@
         <!-- /.container-fluid -->
     </div>
 
-    <section>
-        <div style="margin-top: 4.5%" class="container">
+<section id="fotosPage">
+    <div class="container">
+        <div class="row">
 
-            <div class="row col-md-12  video-container">
+            <div style="font-size: 30px; padding-top:1%">
+                <span class="glyphicon glyphicon-facetime-video"></span>
+                VÍDEOS
+            </div>
 
-                <div class="col-sm-6 col-md-6">
-                    <div class="polaroid2 embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/fnjtv4zzH78"></iframe>
-                    </div>
-
+            <!--plugin face-->
+            <div style="text-align: center; padding-bottom: 1%" class="col-md-12 visible-desktop visible-tablet ">
+                <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count">
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="polaroid2 embed-responsive embed-responsive-16by9 ">
-                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/u5JqXFG8YRw"></iframe>
-                    </div>
+                <div class="fb-follow" data-href="https://www.facebook.com/profile.php?id=100010320933347" data-layout="button_count" data-show-faces="false">
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="polaroid2 embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/fnjtv4zzH78"></iframe>
-                    </div>
+            </div>
+            <!--fim plugin face-->
 
+
+                <div class="col-lg-4 col-md-4 col-xs-12 ">
+                    <a class="thumbnail" href="">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/fnjtv4zzH78"></iframe>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="polaroid2 embed-responsive embed-responsive-16by9 ">
-                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/u5JqXFG8YRw"></iframe>
-                    </div>
+
+                <div  class="col-lg-4 col-md-4 col-xs-12 ">
+                    <a class="thumbnail" href="">
+                       <div class="embed-responsive embed-responsive-16by9 ">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/u5JqXFG8YRw"></iframe>
+                        </div>
+                    </a>
+                </div>
+
+                <div  class="col-lg-4 col-md-4 col-xs-12">
+                    <a class="thumbnail" href="">
+                       <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/fnjtv4zzH78"></iframe>
+                        </div>
+                    </a>
                 </div>
 
             </div>
-        </div>
 
-    </section>
+        <!--icone e botão-->
+
+            <div class="col-md-12">
+                <!--api youtube-->
+                <div class="col-md-6 col-xs-6">
+                  <div class="g-ytsubscribe" data-channelid="UCqogpDQvFFRJ3s2zuQmpJEw" data-layout="default" data-theme="dark" data-count="default" data-onytevent="onYtEvent"></div>
+                <div style="font-style: italic">Escreva-se no canal</div>
+                </div>
+                    <!--fim-->
+
+                <div class="col-md-6 col-xs-6" >
+                    <a href="https://www.youtube.com/channel/UCqogpDQvFFRJ3s2zuQmpJEw" target="_blank">
+                        <div  style="font-size: 20px;float: right" class="btn btn-sm btn-danger">
+                            <span style="font-size: 30px" class="fa fa-youtube"></span>
+                        Mais vídeos
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+</section>
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-below">

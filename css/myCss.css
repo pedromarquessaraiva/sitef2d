@@ -638,9 +638,8 @@ a#lkd :hover{
 background-color: #007bb6;
 }
 a#youtube :hover{
-background-color: #CB2027;
+background-color: #CC181E;
 }
-
 
 @media (min-width: 4200px){
 
@@ -653,7 +652,6 @@ background-color: #CB2027;
 
     .video-container {
         padding-top:47px;
-
 
     }
 }
